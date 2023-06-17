@@ -19,17 +19,23 @@
     >
       <div class="bg-green-500 w-full p-12 hover:drop-shadow-2xl rounded-lg">
         <h1 class="text-2xl font-bold">Deposit</h1>
-        <h1 class="text-5xl">$<span class="text-5xl">0.00</span></h1>
+        <h1 class="text-4xl">
+          $<span id="span-deposit" class="text-4xl">0.00</span>
+        </h1>
       </div>
       <div class="bg-yellow-500 w-full p-12 hover:drop-shadow-2xl rounded-lg">
         <h1 class="text-2xl font-bold">Withdraw</h1>
-        <h1 class="text-5xl">$<span class="text-5xl">0.00</span></h1>
+        <h1 class="text-4xl">
+          $<span id="span-withdraw" class="text-4xl">0.00</span>
+        </h1>
       </div>
       <div
         class="bg-red-500 w-full p-12 hover:drop-shadow-2xl rounded-lg sm:col-span-2 md:col-span-1"
       >
-        <h1 class="text-2xl font-bold">Balance</h1>
-        <h1 class="text-5xl">$<span class="text-5xl">1200</span></h1>
+        <h1 id="h1-balance" class="text-2xl font-bold">Balance</h1>
+        <h1 class="text-4xl">
+          $<span id="span-balance" class="text-4xl">1200</span>
+        </h1>
       </div>
     </section>
 
@@ -43,7 +49,7 @@
         <input
           id="input-deposit"
           class="block p-4 text-base md:text-2xl font-bold text-[#05BFDB] rounded-lg transition-all drop-shadow-md hover:drop-shadow-2xl border-none focus:outline-none"
-          type="password"
+          type="number"
           placeholder="$ Deposit Amount"
           required
         />
@@ -61,7 +67,7 @@
         <input
           id="input-withdraw"
           class="block p-4 text-base md:text-2xl font-bold text-[#05BFDB] rounded-lg transition-all drop-shadow-md hover:drop-shadow-2xl border-none focus:outline-none"
-          type="password"
+          type="number"
           placeholder="$ Withdraw Amount"
           required
         />
@@ -73,5 +79,6 @@
         </button>
       </div>
     </section>
+    <script src="js/bank.js"></script>
   </body>
 </html>
